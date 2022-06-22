@@ -1,0 +1,121 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+header {
+    background-color: #1E441E;
+    padding-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+}
+.header_logo {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+.center {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /* background: #000; */
+}
+button {
+    transition: 0.15s;
+    border-color: blueviolet;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 3px 1px rgb(94, 3, 180);
+}
+
+button:hover {
+    transition: 0.15s;
+    margin-top: 2px;
+    box-shadow: 0px 1px 1px rgb(94, 3, 180);
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.dot {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    display: inline-block;
+    background-image: url("clockbg.png")
+}
+
+.seconds {
+    margin-top: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+    border-color: red;
+    border-style: solid;
+    display: inline-block;
+    position: absolute;
+    animation: rotate 30s steps(60, end) infinite;
+    transform-origin: bottom;
+}
+
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.sec_center {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#zero_second {
+    left: 20px;
+    position: absolute;
+}
+
+#one_second {
+    left: 700px;
+    position: absolute;
+}
+#two_second {
+    left: 20px;
+    position: absolute;
+}
+#three_second {
+    left: 20px;
+    position: absolute;
+}
+
+.seconds_font {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+</style>
+
+<div class="center">
+  <div class="dot">
+    <div class="sec_center">
+      <div class="seconds"></div>
+    </div>
+  </div>
+</div>
